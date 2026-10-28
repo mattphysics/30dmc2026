@@ -11,6 +11,8 @@ tools in one place. Nothing to install beyond `pip`; nothing hidden.
 ## The maps
 
 - **[Day 2 · Lines](day02_lines_jet)** — the jet stream as 250 hPa wind, drawn as flowing streamlines.
+- **[Day 6 · Vintage](day06_vintage)** — today's mean-sea-level pressure as a mid-century surface
+  analysis chart: sepia isobars, hand-marked highs and lows, on aged paper.
 - **[Day 20 · Hexagons](day20_hexagons)** — one forecast on three model grids (25 → 9 → 1 km),
   binned into hexagons, so you can *see* what resolution buys you.
 - **[Day 22 · Projections](day22_projections)** — one 500 hPa height field on four projections,
