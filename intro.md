@@ -13,6 +13,8 @@ tools in one place. Nothing to install beyond `pip`; nothing hidden.
 - **[Day 2 · Lines](day02_lines_jet)** — the jet stream as 250 hPa wind, drawn as flowing streamlines.
 - **[Day 20 · Hexagons](day20_hexagons)** — one forecast on three model grids (25 → 9 → 1 km),
   binned into hexagons, so you can *see* what resolution buys you.
+- **[Day 22 · Projections](day22_projections)** — one 500 hPa height field on four projections,
+  so the distortion every flat map makes becomes visible in the graticule.
 
 Use the sidebar to open each day. **Code is collapsed by default** — click the **＋** on any
 cell to reveal it.

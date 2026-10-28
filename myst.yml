@@ -13,6 +13,7 @@ project:
       children:
         - file: day02_lines_jet.ipynb
         - file: day20_hexagons.ipynb
+        - file: day22_projections.ipynb
 site:
   title: Weather Maps
   template: book-theme
