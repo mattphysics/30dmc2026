@@ -1,5 +1,7 @@
 .venv/
 data/*.grib2
+data/*.nc
+data/*.download
 data/*.idx
 *.idx
 __pycache__/

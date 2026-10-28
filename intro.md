@@ -17,6 +17,8 @@ tools in one place. Nothing to install beyond `pip`; nothing hidden.
   binned into hexagons, so you can *see* what resolution buys you.
 - **[Day 22 · Projections](day22_projections)** — one 500 hPa height field on four projections,
   so the distortion every flat map makes becomes visible in the graticule.
+- **[Day 28 · Feeling](day28_feeling_utci)** — the day Britain hit 40 °C, as the Universal Thermal
+  Climate Index (UTCI): what the heat actually *felt* like, from ERA5-HEAT reanalysis.
 
 Use the sidebar to open each day. **Code is collapsed by default** — click the **＋** on any
 cell to reveal it.
@@ -35,5 +37,7 @@ cell to reveal it.
 - **ECMWF Open Data** — Creative Commons **CC-BY-4.0**. © ECMWF · source www.ecmwf.int ·
   [Terms of Use](https://apps.ecmwf.int/datasets/licences/general/).
 - **MeteoSwiss Open Data** — ICON-CH1-EPS via the Swiss open-data STAC API; attribute MeteoSwiss.
+- **ERA5-HEAT (UTCI)** — Copernicus Climate Change Service (C3S), via the CDS. Contains modified
+  Copernicus Climate Change Service information.
 
 Maps by **Emma Pidduck**.
