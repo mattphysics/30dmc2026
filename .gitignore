@@ -7,3 +7,6 @@ __pycache__/
 .DS_Store
 explorations/
 assets/*.png
+_build/
+.jupyter_cache/
+.gstack/

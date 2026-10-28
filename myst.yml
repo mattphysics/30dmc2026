@@ -1,0 +1,22 @@
+version: 1
+project:
+  title: Weather Maps
+  subtitle: "#30DayMapChallenge 2026 · built on open data"
+  authors:
+    - name: Emma Pidduck
+  github: https://github.com/piddy376/30dmc2026
+  copyright: "2026 · Emma Pidduck"
+  # Do NOT re-execute — the notebooks fetch live, expiring data; show the rendered figures.
+  toc:
+    - file: intro.md
+    - title: The maps
+      children:
+        - file: day02_lines_jet.ipynb
+        - file: day20_hexagons.ipynb
+site:
+  title: Weather Maps
+  template: book-theme
+  options:
+    logo_text: Weather Maps · #30DayMapChallenge 2026
+    hide_outline: false
+    folders: true
