@@ -17,6 +17,10 @@ tools in one place. Nothing to install beyond `pip`; nothing hidden.
   binned into hexagons, so you can *see* what resolution buys you.
 - **[Day 22 · Projections](day22_projections)** — one 500 hPa height field on four projections,
   so the distortion every flat map makes becomes visible in the graticule.
+- **[Day 26 · Water](day26_water_vapour)** — total-column water vapour as an orthographic globe:
+  the atmospheric rivers that carry more water than the Amazon, drawn on the sphere.
+- **[Day 27 · New tool](day27_new_tool_zarr)** — the Great Storm of 1987, pulled live from the
+  ERA5 reanalysis as cloud-native **Zarr** (ARCO-ERA5): one hour out of 60+ years, no download.
 - **[Day 28 · Feeling](day28_feeling_utci)** — the day Britain hit 40 °C, as the Universal Thermal
   Climate Index (UTCI): what the heat actually *felt* like, from ERA5-HEAT reanalysis.
 
@@ -30,6 +34,7 @@ cell to reveal it.
 | [`ecmwf-opendata`](https://github.com/ecmwf/ecmwf-opendata) | ECMWF IFS open data (0.25° & 0.1°) |
 | [`meteodata-lab`](https://github.com/MeteoSwiss/meteodata-lab) | MeteoSwiss ICON-CH1 1 km |
 | [`earthkit-data`](https://earthkit-data.readthedocs.io) | reading GRIB |
+| [`zarr`](https://zarr.readthedocs.io) · [`gcsfs`](https://gcsfs.readthedocs.io) | cloud-native ERA5 (ARCO-ERA5), no download |
 | [`h3`](https://h3geo.org) · `cartopy` · `matplotlib` | hexagons, projection, render |
 
 ## Data & licence
@@ -39,5 +44,7 @@ cell to reveal it.
 - **MeteoSwiss Open Data** — ICON-CH1-EPS via the Swiss open-data STAC API; attribute MeteoSwiss.
 - **ERA5-HEAT (UTCI)** — Copernicus Climate Change Service (C3S), via the CDS. Contains modified
   Copernicus Climate Change Service information.
+- **ERA5 / ARCO-ERA5** — ECMWF ERA5 reanalysis for C3S, served as cloud-native Zarr by Google
+  (`gs://gcp-public-data-arco-era5`). Contains modified Copernicus Climate Change Service information.
 
 Maps by **Emma Pidduck**.

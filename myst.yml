@@ -15,6 +15,8 @@ project:
         - file: day06_vintage.ipynb
         - file: day20_hexagons.ipynb
         - file: day22_projections.ipynb
+        - file: day26_water_vapour.ipynb
+        - file: day27_new_tool_zarr.ipynb
         - file: day28_feeling_utci.ipynb
 site:
   title: Weather Maps
