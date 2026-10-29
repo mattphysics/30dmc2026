@@ -13,6 +13,7 @@ project:
       children:
         - file: day02_lines_jet.ipynb
         - file: day06_vintage.ipynb
+        - file: day12_power_wind.ipynb
         - file: day20_hexagons.ipynb
         - file: day22_projections.ipynb
         - file: day26_water_vapour.ipynb
