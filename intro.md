@@ -6,6 +6,10 @@ Beautiful, reproducible weather maps built on **open data** — from ECMWF's glo
 Every map is a **self-contained Jupyter notebook**: method, code, output, data licence and
 tools in one place. Nothing to install beyond `pip`; nothing hidden.
 
+> ⚠️ **Just for fun — not an official ECMWF product.** Claude (Anthropic) helped build these
+> notebooks. They are **not** official ECMWF notebooks and are **not** supported by ECMWF — a
+> personal #30DayMapChallenge experiment to show how approachable open weather data has become.
+
 ![The impact of resolution — 24-hour precipitation over Switzerland](day20_hexagons.png)
 
 ## The maps

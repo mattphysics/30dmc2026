@@ -9,6 +9,8 @@ __pycache__/
 .DS_Store
 explorations/
 assets/*.png
+!assets/ECMWF_Core_Logo_RGB.png
+!assets/ECMWF_Core_Logo_WHITE.png
 _build/
 .jupyter_cache/
 .gstack/
