@@ -1,5 +1,6 @@
 .venv/
 data/*.grib2
+data/*.grib
 data/*.nc
 data/*.download
 data/*.idx
