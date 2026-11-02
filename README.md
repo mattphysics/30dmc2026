@@ -44,6 +44,7 @@ Code licence: see [`LICENSE`](LICENSE).
 |----:|-------|-----|------|--------|
 | 2 | Lines | Jet stream — 250 hPa isotach field + streamlines | ECMWF open data | built |
 | 3 | Polygons | Bulgaria's November, by municipality + bivariate rain × temperature | ERA5-Land (CDS) | built |
+| 3 | Polygons | *Second take* — Greece as 40 polygons posted to Polytope; the server returns only the cells inside | Climate DT (Polytope) | built |
 | 6 | Vintage | The night of the Great Flood — 31 Jan 1953 as a period synoptic chart | ERA5 (CDS) | built |
 | 14 | Borgesian map | The map at the scale of the territory — one field, six frames, down to one cell | nextGEMS IFS | built |
 | 20 | Hexagons | 25 / 9 / 1 km precipitation over Switzerland, H3 hexbins | ECMWF + MeteoSwiss | built |

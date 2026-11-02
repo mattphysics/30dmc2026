@@ -193,11 +193,16 @@ rather than the 1991–2020 normal. Same code, different punchline.
 ---
 
 ## Built so far
-**Day 6 (Vintage)**, **Day 20 (HEALPix nesting + hexagons)** and **Day 14 (Borgesian)** are
-done — see the table in [`README.md`](README.md). Day 20 and Day 14 came out as two halves of
+**Day 6 (Vintage)**, **Day 20 (HEALPix nesting + hexagons)**, **Day 14 (Borgesian)** and
+**Day 3 (Polygons, second take)** are done — see the table in [`README.md`](README.md). Day 20 and Day 14 came out as two halves of
 one idea: Day 20 holds the frame still and changes the grid; Day 14 holds the grid still and
 moves the frame. Day 20 ships three figures — the HEALPix ladder, the same ladder on Climate DT,
 and the storm re-binned into real **H3 hexagons**, which do not nest the way HEALPix does.
+
+The Day 3 second take is the one new *mechanism*: **Polytope feature extraction** accepts a
+polygon as part of the request, so Greece's 40 rings come back as 3,211 Climate DT cells and
+nothing else. That opens up every other "statistics over an awkward shape" idea in this file
+— catchments, provinces, protected areas — without ever pulling a global field.
 
 ## Next up
 **Day 13 (Interactions)** for the "only ECMWF could make this" factor, and **Day 18 (NULL)**

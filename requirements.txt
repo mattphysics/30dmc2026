@@ -15,3 +15,9 @@ intake==0.7.0
 healpy
 h3                 # Day 20 - actual hexagons (H3 bins)
 zarr
+# Day 3 (second take) — Polytope feature extraction over polygons
+# (earthkit-data is listed above)
+polytope-client
+earthkit-geo
+shapely
+pyproj

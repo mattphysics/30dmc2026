@@ -21,6 +21,37 @@ eastern Atlantic. Palette is luminance-monotonic, so it stays legible for colour
 viewers and in greyscale; `cividis` is offered as a by-construction-safe alternative.
 `DATE=0` re-runs live on the day.
 
+## Day 3 · Polygons — the map is the query  (built, second take)
+`day03_polygons_polytope.ipynb` → `day03_polygons_polytope.png`. The first Day 3 masks a
+downloaded grid locally; this one never downloads a grid. **Polytope feature extraction** takes
+the polygon as part of the request: `country_polygons(["Greece"])` gives 40 rings and 923
+vertices, and the server returns the 3,211 Climate DT cells inside them — 0.026% of the 12.6 M
+global cells.
+
+What that buys is volume, not insight: a tight bounding box returns the same land cells plus
+10,731 more, because Greek land is only 23% of its own bounding box. At 6,624 hourly fields
+that is ~1.1 GB of CoverageJSON instead of ~4.8 GB. The rings are still needed locally to
+assign islands and measure distance to the coast — the polygon just applies that test on the
+server, before the transfer rather than after.
+
+Hourly 2 m temperature, JJA of three model summers (6,624 hourly fields), fetched in 10-day
+blocks and reduced to daily maxima and minima as each block lands. Mainland cells have a mean
+diurnal range of 10.5 K against 7.3 K on the islands, and 54 hours above 35 °C per summer
+against 20. Binned by distance to the nearest coast the range climbs 7.8 → 11.5 K over the
+first 30 km and then flattens: **the sea's damping of the daily cycle reaches about 30 km
+inland.** That is a result about resolution and coastline geometry, not about Polytope.
+
+The adaptation-relevant twist is that the sea cuts the day but holds the night up — islands
+average 28.2 °C by day against the mainland's 29.3 °C, but 20.9 °C by night against 18.8 °C.
+Counting **tropical nights** (minimum above 20 °C), the standard heat-health index, the coast
+is the worse place to be: 58 per summer on the islands against 38 on the mainland, 62 within
+5 km of the sea against 24 beyond 45 km — and that is where the people and the tourism are.
+Answering that needs km-scale cells and a multi-decade run, which is the case for the Climate DT.
+
+Two request traps worth remembering: `time: "0000/to/2300"` must not carry `by/0100` (with it
+the server silently returns one field per date instead of 24), and model availability differs
+by site — MN5 serves IFS-NEMO where LUMI answers "No data ... on the FDB" and serves IFS-FESOM.
+
 ## Day 20 · Hexagons — the impact of resolution  (built)
 `day20_hexagons.ipynb` → `day20_hexagons.png`. **Three grids**, coarse to fine:
 - **ECMWF 25 km** (0.25°, H3 res 4) · **ECMWF 9 km** (0.1°, H3 res 5) · **MeteoSwiss 1 km**
