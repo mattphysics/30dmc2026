@@ -6,3 +6,12 @@ cartopy
 matplotlib
 scipy
 jupyterlab
+# Day 3, 6 — Copernicus Climate Data Store (ERA5, ERA5-Land)
+cdsapi
+netcdf4
+geopandas
+# Day 14, 20 — HEALPix / km-scale catalogues
+intake==0.7.0
+healpy
+h3                 # Day 20 - actual hexagons (H3 bins)
+zarr
