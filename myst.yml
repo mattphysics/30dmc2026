@@ -12,6 +12,7 @@ project:
     - title: The maps
       children:
         - file: day02_lines_jet.ipynb
+        - file: day03_polygons.ipynb
         - file: day05_sight_ssd.ipynb
         - file: day06_vintage.ipynb
         - file: day12_power_wind.ipynb

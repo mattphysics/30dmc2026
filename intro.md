@@ -15,6 +15,8 @@ tools in one place. Nothing to install beyond `pip`; nothing hidden.
 ## The maps
 
 - **[Day 2 · Lines](day02_lines_jet)** — the jet stream as 250 hPa wind, drawn as flowing streamlines.
+- **[Day 3 · Polygons](day03_polygons)** — a Bulgarian November: rainfall by municipality, and a
+  bivariate rain × temperature choropleth, from ERA5-Land.
 - **[Day 5 · Senses: Sight](day05_sight_ssd)** — how the *model* sees: the IFS rendered as a
   Meteosat-10 infrared image. What looks like a satellite photo is a six-day forecast. *(Simulated
   satellite imagery is an ECMWF operational product; the sample here is shared one-off under CC-BY-4.0.)*
