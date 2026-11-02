@@ -15,6 +15,7 @@ project:
         - file: day03_polygons.ipynb
         - file: day05_sight_ssd.ipynb
         - file: day06_vintage.ipynb
+        - file: day09_urban_rural.ipynb
         - file: day12_power_wind.ipynb
         - file: day20_hexagons.ipynb
         - file: day22_projections.ipynb

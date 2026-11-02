@@ -17,3 +17,17 @@ This one file **is** committed, so the Day 5 notebook runs without ECMWF MARS ac
   service model — this sample is **not** a general open-data release of `ssd`.
 - **Note:** the repository `LICENSE` covers the code and notebooks, **not** this data file, which
   carries the CC-BY-4.0 attribution above.
+
+## Day 9 (Urban–rural, Hungary) — not committed, fetched at run time
+
+The Day 9 notebook downloads Hungary's open gridded climate data from HungaroMet's open-data server
+([odp.met.hu](https://odp.met.hu)) and computes the climatologies locally; the raw grids and the
+derived NetCDFs are **git-ignored** (`data/_raw/`, `data/day09_*.nc`). Only the rendered maps are
+committed — no data is redistributed.
+
+- **Sunshine** — CARPATCLIM daily sunshine grids, 1961–2010 (`SunshineDailyGrid.zip`).
+  *CARPATCLIM Database © European Commission – JRC, 2013*; distributed by HungaroMet/OMSZ.
+- **Rainfall** — HungaroMet (OMSZ) HuClim national daily grid, 1991–2020 normal (`r_grid_19712025`).
+  Free use with attribution: *Database: Meteorological Database, HungaroMet Nonprofit Zrt.*
+  (HungaroMet's terms allow free use with citation but require written consent to modify/redistribute
+  the published series — hence the notebook recomputes locally rather than shipping a derived file.)

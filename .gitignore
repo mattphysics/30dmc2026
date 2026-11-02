@@ -15,3 +15,4 @@ assets/*.png
 _build/
 .jupyter_cache/
 .gstack/
+data/_raw/

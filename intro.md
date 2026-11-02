@@ -23,6 +23,9 @@ tools in one place. Nothing to install beyond `pip`; nothing hidden.
   real observation. *(Operational ECMWF product; the sample here is shared one-off under CC-BY-4.0.)*
 - **[Day 6 · Vintage](day06_vintage)** — today's mean-sea-level pressure as a mid-century surface
   analysis chart: sepia isobars, hand-marked highs and lows, on aged paper.
+- **[Day 9 · Urban-rural](day09_urban_rural)** — *Hungary, the sunshine country*, built on Hungary's
+  own open data: mean annual sunshine (CARPATCLIM) and rainfall (HungaroMet/OMSZ), the sunny dry
+  south-eastern plain against the cloudier, wetter hills and west — plus a year-of-sunshine GIF.
 - **[Day 12 · Power](day12_power_wind)** — 100 m wind power density over the North Sea offshore-wind
   belt: the energy in the wind (½·ρ·V³), with the big farms marked.
 - **[Day 20 · Hexagons](day20_hexagons)** — one forecast on three model grids (25 → 9 → 1 km),
@@ -45,6 +48,7 @@ cell to reveal it.
 |---|---|
 | [`ecmwf-opendata`](https://github.com/ecmwf/ecmwf-opendata) | ECMWF IFS open data (0.25° & 0.1°) |
 | **MARS** · [`ecmwf-api-client`](https://github.com/ecmwf/ecmwf-api-client) | IFS simulated satellite imagery (`ssd`, licensed — Day 5) |
+| [odp.met.hu](https://odp.met.hu) (HungaroMet / CARPATCLIM) | Hungary's open gridded climate — sunshine & rainfall (Day 9) |
 | [`meteodata-lab`](https://github.com/MeteoSwiss/meteodata-lab) | MeteoSwiss ICON-CH1 1 km |
 | [`earthkit-data`](https://earthkit-data.readthedocs.io) | reading GRIB |
 | [`zarr`](https://zarr.readthedocs.io) · [`gcsfs`](https://gcsfs.readthedocs.io) | cloud-native ERA5 (ARCO-ERA5), no download |
@@ -64,5 +68,10 @@ cell to reveal it.
   sample used here (3 brightness-temperature fields) is shared **one-off** under
   **[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)** so the notebook is reproducible.
   © ECMWF · source www.ecmwf.int.
+
+- **CARPATCLIM & HungaroMet / OMSZ** (Day 9) — Hungary's sunshine from **CARPATCLIM**
+  (*© European Commission – JRC, 2013*, via HungaroMet/OMSZ) and rainfall from **HungaroMet
+  (OMSZ)**'s open gridded database ([odp.met.hu](https://odp.met.hu), free use with attribution).
+  Processed at run time; only the maps are shared.
 
 Maps by **Emma Pidduck**.
