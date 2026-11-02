@@ -1,6 +1,7 @@
 .venv/
 data/*.grib2
 data/*.nc
+data/*.npz
 data/*.download
 data/*.idx
 *.idx

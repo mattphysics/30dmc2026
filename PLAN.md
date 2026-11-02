@@ -21,36 +21,31 @@ eastern Atlantic. Palette is luminance-monotonic, so it stays legible for colour
 viewers and in greyscale; `cividis` is offered as a by-construction-safe alternative.
 `DATE=0` re-runs live on the day.
 
-## Day 3 · Polygons — the map is the query  (built, second take)
+## Day 3 · Polygons — Summer weather in Greece  (built, second take)
 `day03_polygons_polytope.ipynb` → `day03_polygons_polytope.png`. The first Day 3 masks a
 downloaded grid locally; this one never downloads a grid. **Polytope feature extraction** takes
 the polygon as part of the request: `country_polygons(["Greece"])` gives 40 rings and 923
-vertices, and the server returns the 3,211 Climate DT cells inside them — 0.026% of the 12.6 M
-global cells.
+vertices, and the data bridge returns the 3,211 Climate DT cells inside them — 0.026% of the
+12.6 M global cells.
 
 What that buys is volume, not insight: a tight bounding box returns the same land cells plus
 10,731 more, because Greek land is only 23% of its own bounding box. At 6,624 hourly fields
 that is ~1.1 GB of CoverageJSON instead of ~4.8 GB. The rings are still needed locally to
 assign islands and measure distance to the coast — the polygon just applies that test on the
-server, before the transfer rather than after.
+data bridge, before the transfer rather than after. Retrieval is 27 ten-day requests,
+15–25 minutes depending on queue load; the result caches to `data/` (gitignored).
 
-Hourly 2 m temperature, JJA of three model summers (6,624 hourly fields), fetched in 10-day
-blocks and reduced to daily maxima and minima as each block lands. Mainland cells have a mean
-diurnal range of 10.5 K against 7.3 K on the islands, and 54 hours above 35 °C per summer
-against 20. Binned by distance to the nearest coast the range climbs 7.8 → 11.5 K over the
-first 30 km and then flattens: **the sea's damping of the daily cycle reaches about 30 km
-inland.** That is a result about resolution and coastline geometry, not about Polytope.
+Hourly 2 m temperature, JJA of three model summers. **Two panels, two geographies.** Daytime
+maxima are set by altitude and ignore the sea entirely (correlation with distance to coast
+−0.01): coolest in the northern Pindus at 17 °C, hottest inland and on the Dodecanese at 35 °C.
+Tropical nights — minimum above 20 °C, the standard heat-health index — are set by the sea
+(−0.44): **none at all in the northern mountains, 91 of 92 on the Dodecanese**, 62 within 5 km
+of the shore against 24 beyond 45 km. Nights are the half that matters for heat-health, which
+makes the coast, where the people and the tourism are, the harder place to be. Answering that
+needs km-scale cells and a multi-decade run — the case for the Climate DT, made concretely.
 
-The adaptation-relevant twist is that the sea cuts the day but holds the night up — islands
-average 28.2 °C by day against the mainland's 29.3 °C, but 20.9 °C by night against 18.8 °C.
-Counting **tropical nights** (minimum above 20 °C), the standard heat-health index, the coast
-is the worse place to be: 58 per summer on the islands against 38 on the mainland, 62 within
-5 km of the sea against 24 beyond 45 km — and that is where the people and the tourism are.
-Answering that needs km-scale cells and a multi-decade run, which is the case for the Climate DT.
-
-Two request traps worth remembering: `time: "0000/to/2300"` must not carry `by/0100` (with it
-the server silently returns one field per date instead of 24), and model availability differs
-by site — MN5 serves IFS-NEMO where LUMI answers "No data ... on the FDB" and serves IFS-FESOM.
+Title and layout follow Emma's house style: a plain descriptive title, the technical line in
+the subtitle, and single lines of finding and method above the attribution rather than prose.
 
 ## Day 20 · Hexagons — the impact of resolution  (built)
 `day20_hexagons.ipynb` → `day20_hexagons.png`. **Three grids**, coarse to fine:
@@ -63,7 +58,7 @@ grids smooth away (max precip 9 → 12 → 20 mm). City call-outs + a one-place 
 ICON-CH1 caps at 33 h, so the window is ≤ 33 h (24 h used); fetched live via `ogd_api`.
 
 ## Day 6 · Vintage — the night of the Great Flood  (built)
-`day06_vintage.ipynb` → `day06_vintage_1953.png`. The **31 January 1953 North Sea storm** drawn
+`day06_vintage_1953.ipynb` → `day06_vintage_1953.png`. The **31 January 1953 North Sea storm** drawn
 as a period surface chart: 4 hPa isobars with a pen-and-ink wobble (`path.sketch`), wind barbs in
 knots, cold fronts traced from the **850 hPa θₑ gradient ridge**, the depression's 3-hourly track,
 paper grain and vignette. The inversion is the point — the analysis underneath is **ERA5**, which
@@ -108,15 +103,17 @@ approximates its parent), and at matched cell size H3 and HEALPix disagree on th
 Layout across all three follows Emma's Day 20: title, maps, colourbar, then numbers — no prose
 on the figure. Day 14 likewise: maps, colourbar, the Borges quote, footer.
 
-## Day 22 · Projections
-One field (e.g. Z500) in Plate Carrée, Robinson and polar orthographic — the distortion
-made visible. Reuses the Day 2 data pipeline.
-
-## Day 26 · Water
-Significant wave height across the North Atlantic from the ECMWF wave stream.
+*Days 22 (Projections) and 26 (Water) were dropped from this list once Emma built them.*
 
 ## Day 4 · Clusters
 Cluster the ENS members by 500 hPa pattern — forecast spread shown as grouped maps.
+
+## Day 13 · Interactions
+Ocean–atmosphere coupling in the Climate DT — where the storm tracks sit over the eddies.
+Reuses the Day 3 Polytope machinery for a non-rectangular region.
+
+## Day 18 · NULL
+Where the models have nothing to say: cells, hours or variables with no information in them.
 
 ## Day 29 · Raster
 The same field on its native 0.1° grid — a paired "before" to the Day 20 hexagons.

@@ -38,7 +38,7 @@ repo doesn't have yet.
 
 ## Priority ideas
 
-### Day 6 · Vintage — a 1950s synoptic chart, drawn from ERA5  🟢  ✅ **BUILT** → [`day06_vintage.ipynb`](day06_vintage.ipynb)
+### Day 6 · Vintage — a 1950s synoptic chart, drawn from ERA5  🟢  ✅ **BUILT** → [`day06_vintage_1953.ipynb`](day06_vintage_1953.ipynb)
 Pick a famous storm — the **31 Jan 1953 North Sea flood**, or the D-Day forecast window of
 June 1944 — and render MSLP isobars and fronts in the hand-drawn Met Office house style of
 the period: sepia paper, hand-lettered pressure centres, hatched front symbols, no colour

@@ -49,10 +49,15 @@ Code licence: see [`LICENSE`](LICENSE).
 | 14 | Borgesian map | The map at the scale of the territory — one field, six frames, down to one cell | nextGEMS IFS | built |
 | 20 | Hexagons | 25 / 9 / 1 km precipitation over Switzerland, H3 hexbins | ECMWF + MeteoSwiss | built |
 | 20 | Hexagons | *Second take* — one storm, five grids by exact HEALPix nesting; the same ladder on Climate DT; and the same storm in real H3 hexagons | nextGEMS IFS + Climate DT | built |
-| 22 | Projections | One field, three projections | ECMWF open data | planned |
-| 26 | Water | Significant wave height, N. Atlantic | ECMWF wave stream | planned |
 | 4 | Clusters | Rediscovering Köppen from scratch, then moving it to 2050 | Climate DT | planned |
+| 13 | Interactions | Ocean–atmosphere coupling, where the storms meet the eddies | Climate DT | planned |
+| 18 | NULL | Where the models have nothing to say | Climate DT | planned |
 | 29 | Raster | The native grid behind the hexagons | ECMWF open data | planned |
+
+Days 22 (Projections) and 26 (Water) were dropped from this list once Emma built them — see
+her repo for 5, 9, 12, 22, 26, 27 and 28. Duplicates are welcome where the take is genuinely
+different (Days 3 and 20 here are second takes on days she had already covered), but the
+remaining effort is better spent on days neither of us has.
 
 See [`PLAN.md`](PLAN.md) for the brief on each built day, and [`IDEAS.md`](IDEAS.md) for the
 wider brainstorm the remaining days are drawn from.
