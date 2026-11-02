@@ -16,8 +16,8 @@ tools in one place. Nothing to install beyond `pip`; nothing hidden.
 
 - **[Day 2 · Lines](day02_lines_jet)** — the jet stream as 250 hPa wind, drawn as flowing streamlines.
 - **[Day 5 · Senses: Sight](day05_sight_ssd)** — how the *model* sees: the IFS rendered as a
-  Meteosat infrared image. What looks like a satellite photo is a six-day forecast. *(The one map
-  here not built on open data — simulated satellite imagery is an ECMWF operational product.)*
+  Meteosat-10 infrared image. What looks like a satellite photo is a six-day forecast. *(Simulated
+  satellite imagery is an ECMWF operational product; the sample here is shared one-off under CC-BY-4.0.)*
 - **[Day 6 · Vintage](day06_vintage)** — today's mean-sea-level pressure as a mid-century surface
   analysis chart: sepia isobars, hand-marked highs and lows, on aged paper.
 - **[Day 12 · Power](day12_power_wind)** — 100 m wind power density over the North Sea offshore-wind
@@ -57,7 +57,9 @@ cell to reveal it.
 - **ERA5 / ARCO-ERA5** — ECMWF ERA5 reanalysis for C3S, served as cloud-native Zarr by Google
   (`gs://gcp-public-data-arco-era5`). Contains modified Copernicus Climate Change Service information.
 - **ECMWF simulated satellite imagery** (Day 5, `type=ssd`) — an ECMWF **operational** product,
-  **not** part of the open-data release; © ECMWF, used here for a personal non-commercial experiment.
-  The raw GRIB is not redistributed — only the derived image is shown.
+  normally accessed under ECMWF's **service / charge model** (not the open-data release). The small
+  sample used here (3 brightness-temperature fields) is shared **one-off** under
+  **[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)** so the notebook is reproducible.
+  © ECMWF · source www.ecmwf.int.
 
 Maps by **Emma Pidduck**.
