@@ -18,8 +18,9 @@ tools in one place. Nothing to install beyond `pip`; nothing hidden.
 - **[Day 3 · Polygons](day03_polygons)** — a Bulgarian November: rainfall by municipality, and a
   bivariate rain × temperature choropleth, from ERA5-Land.
 - **[Day 5 · Senses: Sight](day05_sight_ssd)** — how the *model* sees: the IFS rendered as a
-  Meteosat-10 infrared image. What looks like a satellite photo is a six-day forecast. *(Simulated
-  satellite imagery is an ECMWF operational product; the sample here is shared one-off under CC-BY-4.0.)*
+  Meteosat-10 infrared image. What looks like a satellite photo is a six-day forecast — a **model
+  product** (SEVIRI's spectral characteristics, but not the viewing geometry), a forecast tool, not a
+  real observation. *(Operational ECMWF product; the sample here is shared one-off under CC-BY-4.0.)*
 - **[Day 6 · Vintage](day06_vintage)** — today's mean-sea-level pressure as a mid-century surface
   analysis chart: sepia isobars, hand-marked highs and lows, on aged paper.
 - **[Day 12 · Power](day12_power_wind)** — 100 m wind power density over the North Sea offshore-wind
