@@ -13,11 +13,15 @@ project:
       children:
         - file: day02_lines_jet.ipynb
         - file: day03_polygons.ipynb
+        - file: day03_polygons_polytope.ipynb
         - file: day05_sight_ssd.ipynb
         - file: day06_vintage.ipynb
+        - file: day06_vintage_1953.ipynb
         - file: day09_urban_rural.ipynb
         - file: day12_power_wind.ipynb
+        - file: day14_borgesian.ipynb
         - file: day20_hexagons.ipynb
+        - file: day20_healpix_nesting.ipynb
         - file: day22_projections.ipynb
         - file: day26_water_vapour.ipynb
         - file: day27_new_tool_zarr.ipynb

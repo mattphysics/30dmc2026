@@ -2,6 +2,7 @@
 data/*.grib2
 data/*.grib
 data/*.nc
+data/*.npz
 data/*.download
 data/*.idx
 *.idx

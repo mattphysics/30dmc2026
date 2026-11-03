@@ -6,3 +6,15 @@ cartopy
 matplotlib
 scipy
 jupyterlab
+# Day 3 (Polytope), 6 (CDS) — and Days 14/20 (HEALPix catalogues)
+cdsapi
+netcdf4
+geopandas
+intake==0.7.0
+healpy
+h3
+zarr
+polytope-client
+earthkit-geo
+shapely
+pyproj
