@@ -32,7 +32,7 @@ grids smooth away (max precip 9 → 12 → 20 mm). City call-outs + a one-place 
 ICON-CH1 caps at 33 h, so the window is ≤ 33 h (24 h used); fetched live via `ogd_api`.
 
 ## Day 15 · Inside out — the ocean's currents, inside out  (built · Matthias)
-`day15_inside_out_currents.ipynb` → `day15_inside_out_currents.png` + `.mp4`. A companion to the wave version of the
+`day15_inside_out_currents.ipynb` → `day15_inside_out_currents.png` + `.gif` + `.mp4`. A companion to the wave version of the
 day: the same Spilhaus projection, with daily-mean top-layer surface current speed (`sqrt(u² + v²)`, 0–1 m/s) and
 sea-ice concentration (15 % and up) from the DestinE Climate DT (IFS-NEMO, `hist`, HEALPix nside 1024), fetched
 through Polytope one day at a time. Default is one month, about four minutes; `FULL_TWO_YEARS = True` runs 2013–2014
