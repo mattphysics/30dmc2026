@@ -2,7 +2,7 @@ earthkit-data
 ecmwf-opendata>=0.3.35
 cfgrib
 xarray
-cartopy
+cartopy>=0.25         # Day 15 (currents) uses ccrs.Spilhaus, new in 0.25
 matplotlib
 scipy
 jupyterlab

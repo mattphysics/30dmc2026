@@ -28,3 +28,6 @@ dayXX_*
 data/bgr_adm2.geojson
 data/deu_adm*.geojson
 *_post_and_alt_text.md
+
+# Day 15 - per-day cache of the Spilhaus samples (about 2.4 MB a day)
+data/day15_currents/

@@ -31,6 +31,15 @@ grids smooth away (max precip 9 → 12 → 20 mm). City call-outs + a one-place 
 `YlGnBu` sequential (colourblind-safe), white background, ECMWF logo + attribution.
 ICON-CH1 caps at 33 h, so the window is ≤ 33 h (24 h used); fetched live via `ogd_api`.
 
+## Day 15 · Inside out — the ocean's currents, inside out  (built · Matthias)
+`day15_inside_out_currents.ipynb` → `day15_inside_out_currents.png` + `.mp4`. A companion to the wave version of the
+day: the same Spilhaus projection, with daily-mean top-layer surface current speed (`sqrt(u² + v²)`, 0–1 m/s) and
+sea-ice concentration (15 % and up) from the DestinE Climate DT (IFS-NEMO, `hist`, HEALPix nside 1024), fetched
+through Polytope one day at a time. Default is one month, about four minutes; `FULL_TWO_YEARS = True` runs 2013–2014
+(730 days). The poster is the map alone; the animation adds a strip of Arctic and Antarctic sea-ice area. The
+pixel-to-cell lookup is computed once, and the per-day samples are cached (`MAP_CACHE` moves the cache).
+Needs approved DestinE access (⬦).
+
 ## Day 22 · Projections
 One field (e.g. Z500) in Plate Carrée, Robinson and polar orthographic — the distortion
 made visible. Reuses the Day 2 data pipeline.
